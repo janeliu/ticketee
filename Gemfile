@@ -25,6 +25,7 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
+  gem 'pry-rails' #REPL - read evaluate print loop
 end
 group :test do
   gem 'capybara', '1.1.2'
