@@ -3,5 +3,6 @@
 <ul>
   <% @projects.each do |project| %>
     <li><%= link_to project.name, project %></li>
+    <li><%= project.created_at %></li>
   <% end %>
 </ul>
