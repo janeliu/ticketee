@@ -21,6 +21,7 @@ RSpec.configure do |config|
   config.before do
     ActionMailer::Base.deliveries.clear
   end
+  config.include Devise::TestHelpers, :type => :controller
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.include EmailSpec::Helpers
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
