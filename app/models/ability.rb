@@ -1,0 +1,2 @@
+def useless
+end
