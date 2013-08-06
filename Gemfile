@@ -5,9 +5,9 @@ gem 'dynamic_form', '1.1.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'pg'
-
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +25,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'coffee-rails-source-maps'
+  gem 'sqlite3'
 end
 
 group :test, :development do
